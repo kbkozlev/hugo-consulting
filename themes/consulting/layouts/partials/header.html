@@ -1,0 +1,39 @@
+{{ $hdr := .Site.Params.header }}
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo {{ if $hdr.logoIcon }}has-image{{ end }}" href="{{ .Site.BaseURL | relURL }}">
+      {{ if $hdr.logoIcon }}
+        <img
+          src="{{ $hdr.logoIcon | relURL }}"
+          alt="{{ or $hdr.companyName (.Site.Params.company.name | default .Site.Title) }}"
+          class="logo-icon"
+          width="32" height="32" loading="lazy" decoding="async">
+      {{ else }}
+        <span class="mark"></span>
+      {{ end }}
+      <span>{{ or $hdr.companyName (.Site.Params.company.name | default .Site.Title) }}</span>
+    </a>
+
+    <!-- Right group: nav + toggle -->
+    <div class="nav-right">
+      <nav>
+        {{ if $hdr.menu }}
+          {{ range $hdr.menu }}
+            <a href="{{ .url | relURL }}">{{ .name }}</a>
+          {{ end }}
+        {{ else }}
+          {{ with .Site.Menus.main }}
+            {{ range . }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+          {{ end }}
+        {{ end }}
+      </nav>
+
+      {{ if or (not (isset .Site.Params.theme "showToggle")) (.Site.Params.theme.showToggle) }}
+        <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+          <span class="icon" id="theme-toggle-icon"></span>
+        </button>
+      {{ end }}
+    </div>
+  </div>
+</header>

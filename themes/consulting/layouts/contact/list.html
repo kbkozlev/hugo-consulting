@@ -1,0 +1,105 @@
+{{ define "main" }}
+{{ $c := .Site.Params.contact }}
+{{ $f := .Site.Params.contactForm }}
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head" style="text-align:left">
+      <h2>{{ or .Title (or $c.title "Contact") }}</h2>
+      {{ with (or .Params.intro $c.intro) }}<p class="muted">{{ . }}</p>{{ end }}
+    </div>
+
+    {{ if and $f.enable $f.formAction }}
+      <div class="contact-grid">
+        <!-- Contact info -->
+        <aside class="card">
+          <h3 style="margin-top:0">Reach us</h3>
+          <ul class="list" style="list-style:none;padding-left:0;margin:0">
+            {{ with $c.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $c.phone }}<li><a href="tel:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $c.address }}<li><span class="muted">{{ . }}</span></li>{{ end }}
+          </ul>
+        </aside>
+
+        <!-- Form -->
+        <div>
+          <form id="contactForm"
+                class="card contact-form"
+                action="{{ $f.formAction }}"
+                method="POST"
+                data-success="Thanks! Your message was sent."
+                data-error="Oops, something went wrong."
+                data-tryagain="Please try again.">
+
+            <h3 style="margin-top:0">Send a message</h3>
+
+            <input type="text" name="honeypot" tabindex="-1" autocomplete="off" style="display:none">
+
+            <div class="form-grid">
+              <div class="field"><label>First name
+                <input class="control" type="text" name="first_name" required></label></div>
+              <div class="field"><label>Last name
+                <input class="control" type="text" name="last_name" required></label></div>
+              <div class="field span-2"><label>Email
+                <input class="control" type="email" name="email" required></label></div>
+              <div class="field span-2"><label>Company
+                <input class="control" type="text" name="company"></label></div>
+              <div class="field span-2"><label>Message
+                <textarea class="control" name="message" rows="6" required></textarea></label></div>
+            </div>
+
+            {{ if and $f.enableCaptcha $f.captchaSiteKey }}
+              <div style="margin:.6rem 0">
+                <label class="muted" style="display:block;margin-bottom:.4rem">I’m not a robot</label>
+                <div class="g-recaptcha" data-sitekey="{{ $f.captchaSiteKey }}"></div>
+              </div>
+              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            {{ end }}
+
+            {{ with $f.accessKey }}<input type="hidden" name="accessKey" value="{{ . }}">{{ end }}
+            {{ with $f.subject   }}<input type="hidden" name="subject"   value="{{ . }}">{{ end }}
+            <input type="hidden" name="replyTo" value="{{ or $f.replyTo "@" }}">
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send</button>
+              <span class="muted">We typically respond within 1–2 business days.</span>
+            </div>
+
+            <div id="contactFormMsg" class="muted" style="margin-top:.8rem" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    {{ else }}
+      <!-- Form disabled: only info -->
+      <div class="contact-grid one-col">
+        <aside class="card">
+          <h3 style="margin-top:0">Reach us</h3>
+          <ul class="list" style="list-style:none;padding-left:0;margin:0">
+            {{ with $c.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $c.phone }}<li><a href="tel:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $c.address }}<li><span class="muted">{{ . }}</span></li>{{ end }}
+          </ul>
+        </aside>
+      </div>
+    {{ end }}
+
+    {{/* Map: keep it INSIDE the container so it inherits theme */}}
+    {{ if $c.mapLink }}
+      <div class="map-container card" style="margin-top:2rem; padding:0;">
+        <iframe
+          src="{{ $c.mapLink }}"
+          width="100%"
+          height="420"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ end }}

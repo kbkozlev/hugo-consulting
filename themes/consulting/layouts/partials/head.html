@@ -1,0 +1,20 @@
+
+{{- $title := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $desc := cond (ne .Description "") .Description .Site.Params.description -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ if $title }}{{ $title }} | {{ end }}{{ $siteTitle }}</title>
+<meta name="description" content="{{ $desc }}">
+
+{{ $css := resources.Get "css/theme.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<script>
+  window.__THEME_CFG__ = {
+    mode: {{ (or .Site.Params.theme.mode "auto") | jsonify }},
+    showToggle: {{ (or .Site.Params.theme.showToggle true) | jsonify }}
+  };
+</script>
+{{ $js := resources.Get "js/theme.js" | fingerprint }}
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

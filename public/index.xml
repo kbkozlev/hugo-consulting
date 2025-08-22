@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP EWM Implementations</title>
+      <link>http://localhost:1313/services/ewm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/ewm/</guid>
+      <description>Blueprint → Go-live for cloud &amp;amp; on-prem with robust integration.</description>
+    </item>
+    <item>
+      <title>MM</title>
+      <link>http://localhost:1313/services/mm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/mm/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PP</title>
+      <link>http://localhost:1313/services/pp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/pp/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SD</title>
+      <link>http://localhost:1313/services/sd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/sd/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/services/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/test/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>S/4HANA</title>
+      <link>http://localhost:1313/services/s4hana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/s4hana/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;p&gt;We value your privacy and are committed to protecting your personal data.&lt;br&gt;&#xA;This policy explains how we collect, use, and safeguard information when you visit our website.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-we-collect&#34;&gt;Information We Collect&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Contact details you provide (e.g., name, email, phone number) when submitting forms.&lt;/li&gt;&#xA;&lt;li&gt;Usage data such as pages visited and browser information.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-we-use-information&#34;&gt;How We Use Information&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To respond to inquiries and provide services.&lt;/li&gt;&#xA;&lt;li&gt;To improve our website and user experience.&lt;/li&gt;&#xA;&lt;li&gt;To comply with legal requirements.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;data-sharing&#34;&gt;Data Sharing&lt;/h2&gt;&#xA;&lt;p&gt;We do &lt;strong&gt;not&lt;/strong&gt; sell or rent your personal data. We may share information only with trusted service providers as needed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Terms of Service</title>
+      <link>http://localhost:1313/terms/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terms/</guid>
+      <description>&lt;h1 id=&#34;terms-of-service&#34;&gt;Terms of Service&lt;/h1&gt;&#xA;&lt;p&gt;By using this website, you agree to the following terms:&lt;/p&gt;&#xA;&lt;h2 id=&#34;use-of-website&#34;&gt;Use of Website&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You may use the content for personal and informational purposes only.&lt;/li&gt;&#xA;&lt;li&gt;You may not misuse, copy, or redistribute our content without permission.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;services&#34;&gt;Services&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Any services described on this site are provided subject to a separate agreement.&lt;/li&gt;&#xA;&lt;li&gt;We reserve the right to update, modify, or discontinue services at any time.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;limitation-of-liability&#34;&gt;Limitation of Liability&lt;/h2&gt;&#xA;&lt;p&gt;We strive to provide accurate information but do not guarantee completeness or suitability.&lt;br&gt;&#xA;We are not liable for damages arising from the use of this site.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sap Ewm Slotting Tips</title>
+      <link>http://localhost:1313/blog/sap-ewm-slotting-tips/</link>
+      <pubDate>Sun, 17 Aug 2025 12:10:44 +0300</pubDate>
+      <guid>http://localhost:1313/blog/sap-ewm-slotting-tips/</guid>
+      <description>&lt;p&gt;Write your post here in Markdown. Add an optional &lt;strong&gt;summary&lt;/strong&gt; in front matter for list cards.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

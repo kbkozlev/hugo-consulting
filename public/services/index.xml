@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on My New Hugo Site</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content in Services on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP EWM Implementations</title>
+      <link>http://localhost:1313/services/ewm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/ewm/</guid>
+      <description>Blueprint → Go-live for cloud &amp;amp; on-prem with robust integration.</description>
+    </item>
+    <item>
+      <title>MM</title>
+      <link>http://localhost:1313/services/mm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/mm/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PP</title>
+      <link>http://localhost:1313/services/pp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/pp/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SD</title>
+      <link>http://localhost:1313/services/sd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/sd/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/services/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/test/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>S/4HANA</title>
+      <link>http://localhost:1313/services/s4hana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/s4hana/</guid>
+      <description>&lt;p&gt;Write the full service body here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,104 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "consulting"
+
+[pagination]
+  pagerSize = 9
+
+
+[params.header]
+  logoIcon     = ""
+  companyName  = "My SAP Company"
+
+  [[params.header.menu]]
+    name = "About Us"
+    url  = "/about/"
+
+  [[params.header.menu]]
+    name = "Services"
+    url  = "/services/"
+  
+  [[params.header.menu]]
+    name = "Blog"
+    url  = "/blog/"
+
+  [[params.header.menu]]
+    name = "Contact"
+    url  = "/contact/"
+
+
+[params.hero]
+  #title         = "Warehouse excellence with SAP EWM"
+  #subtitle      = "We design, implement, and optimize SAP supply-chain solutions that move goods faster and smarter."
+
+  primaryText   = "Contact Us"
+  primaryHref   = "/contact/"
+
+  secondaryText = "Learn More"
+  secondaryHref = "/about/"
+
+
+[params.services]
+  #title = "Services"
+  #intro = "What we help with across SAP EWM / S/4HANA."
+
+  featured = [
+    "/services/ewm/",
+    "/services/s4hana/",
+    "/services/sd/",
+    "/services/mm/",
+  ]
+
+
+[params.blog]
+  #title = "Latest Blog Posts"
+  #intro = "Insights and updates from our SAP experts."
+  
+[params.footer]
+  showBrand = true
+
+  # Column 1
+  [[params.footer.columns]] 
+    title = "Contact"
+    items = [
+      { label = "info@example.com", url = "mailto:info@example.com" },
+      { label = "+1 234 567 890",   url = "tel:+1234567890" }
+    ]
+
+  # Column 2
+  [[params.footer.columns]]
+    title = "Follow"
+    items = [
+      { label = "LinkedIn", url = "https://linkedin.com/company/example" },
+      { label = "Twitter",  url = "https://twitter.com/example" }
+    ]
+
+  # Column 3
+  [[params.footer.columns]]
+    title = "Legal"
+    items = [
+      { label = "Privacy Policy", url = "/privacy/" },
+      { label = "Terms of Service", url = "/terms/" }
+    ]
+
+
+[params.contact]
+  title   = "Contact"
+  intro   = "Tell us a bit about your project and how we can help."
+  email   = "info@example.com123"
+  phone   = "+1 234 567 890"
+  address = "Sofia, Bulgaria"
+  mapLink = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11737.767049018672!2d23.28849085!3d42.6519931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1755884874144!5m2!1sen!2sbg"
+
+
+[params.contactForm]
+  enable = true                # set to false to hide the form entirely
+  formAction = "https://api.staticforms.xyz/submit"
+  accessKey = "YOUR_STATICFORMS_ACCESS_KEY"   # required by StaticForms
+  subject  = "Website contact"
+  replyTo  = "@"
+  enableCaptcha = false
+  captchaSiteKey = ""         # only if you enable reCAPTCHA
+
+
